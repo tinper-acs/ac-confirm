@@ -43,10 +43,7 @@ class AlertDialog extends Component {
                     onHide={close} 
                     draggable={true}
                     resizable={true}
-                    maxWidth={1680}
-                    maxHeight={859}
-                    minWidth={400}
-                    minHeight={201}
+                    width={400}
                     >
                     <Modal.Header closeButton className='ac-confirm-header'>
                         <Modal.Title className='ac-confirm-header-title'>{title}</Modal.Title>
@@ -63,7 +60,7 @@ class AlertDialog extends Component {
                     <Modal.Footer className='ac-confirm-footer'>
                         <Btns
                             btns={{
-                                save:{
+                                confirm:{
                                     onClick:()=>{
                                         this.setState({
                                             show:false

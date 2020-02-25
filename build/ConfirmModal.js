@@ -89,10 +89,7 @@ var AlertDialog = function (_Component) {
                     onHide: close,
                     draggable: true,
                     resizable: true,
-                    maxWidth: 1680,
-                    maxHeight: 859,
-                    minWidth: 400,
-                    minHeight: 201
+                    width: 400
                 },
                 _react2["default"].createElement(
                     _beeModal2["default"].Header,
@@ -127,7 +124,7 @@ var AlertDialog = function (_Component) {
                     { className: 'ac-confirm-footer' },
                     _react2["default"].createElement(_acBtns2["default"], {
                         btns: {
-                            save: {
+                            confirm: {
                                 onClick: function onClick() {
                                     _this2.setState({
                                         show: false
